@@ -1,0 +1,12 @@
+version: '2'
+services:
+    mpaiva360-postgresql:
+        container_name: mpaiva360-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/mpaiva360/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=mpaiva360
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
